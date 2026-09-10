@@ -24,6 +24,7 @@ public class Homework1 {
         got = sc.nextInt();
         sum += got;
         System.out.println("현재까지 입력된 정수의 합: " + sum);
+        
     }
     
 }
