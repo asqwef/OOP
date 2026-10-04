@@ -47,6 +47,6 @@ public class Homework2 {
         System.out.println("입력된 학생들의 정보는 다음과 같습니다.");
         System.out.printf("1번째 학생: "); s1.getInfo();
         System.out.printf("2번째 학생: "); s2.getInfo();
-        System.out.printf("3번째 학생: "); s3.getInfo(); 
+        System.out.printf("3번째 학생: "); s3.getInfo();
     }
 }
