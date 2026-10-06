@@ -23,26 +23,35 @@ class Gcd {
             else { return gcd(a, r); }
         }
     }
-    void printGcd() {
-        System.out.printf("두 수의 최대공약수는 %d입니다.", gcd(m, n));
-    }
     //반복문 스타일
     int loopgcd(int a, int b) {
         while (true) {
             if (a > b) {
                 r = a % b;
                 if (r == 0) { return b;}
+                else {
+                    a = b;
+                    b = r;
+                }
             }
             else {
                 r = b % a;
                 if ( r == 0 ) { return a; }
+                else {
+                    b = a;
+                    a = r;
+                }
             }
         }
     }
-            
+    void printGcd(int a) {
+        System.out.printf("두 수의 최대공약수는 %d입니다.\n", a);
+    }
+
     void run() {
         getInt();
-        printGcd();
+        printGcd(loopgcd(m, n));
+        printGcd(gcd(m, n));
     }
 
 }
